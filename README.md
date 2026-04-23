@@ -107,7 +107,7 @@ SELECT * FROM books;
 SELECT * FROM users;
 SELECT * FROM borrowed_books;
 ```
-**Part 2. Lesson 3: Dataset Queries
+# Part 2. Lesson 3: Dataset Queries
 📂 Tables Used
 The following tables are used in the Lesson 3 task:
 - categories(id, name, description)
@@ -195,10 +195,10 @@ RIGHT JOIN suppliers
 ```
 2.5. Explanation of Row Count Changes
 
-When INNER JOIN is used, only matching rows from both tables are returned.
-When LEFT JOIN is used, all rows from the left table are returned, even if there are no matching rows in the right table. Because of this, the number of rows may increase or remain unchanged.
-When RIGHT JOIN is used, all rows from the right table are returned, even if there are no matching rows in the left table. Therefore, the number of rows may also change.
-In summary, INNER JOIN returns only matching records, while LEFT JOIN and RIGHT JOIN may also include unmatched records.
+- When an `INNER JOIN` is used, only matching rows from both tables are returned.
+- When `LEFT JOIN` is used, all rows from the left table are returned, even if there are no matching rows in the right table. Because of this, the number of rows may increase or remain unchanged.
+- When `RIGHT JOIN` is used, all rows from the right table are returned, even if there are no matching rows in the left table. Therefore, the number of rows may also change.
+- In summary, `INNER JOIN` returns only matching records, while LEFT JOIN and RIGHT JOIN may also include unmatched records.
 2.6. Select Rows Where employee_id > 3 and employee_id <= 10
 ```sql
 SELECT *
@@ -375,14 +375,14 @@ HAVING AVG(order_details.quantity) > 21
 ORDER BY row_count DESC
 LIMIT 4 OFFSET 1;
 ```
-✅ Skills Demonstrated
-Database schema creation
-Table relationships with FOREIGN KEY
-Inserting test data
-Multi-table joins
-Filtering with WHERE
-Aggregation with COUNT and AVG
-Grouping with GROUP BY
-Filtering grouped data with HAVING
-Sorting with ORDER BY
-Pagination with LIMIT and OFFSET
+# ✅ Skills Demonstrated
+- Database schema creation
+- Table relationships with FOREIGN KEY
+- Inserting test data
+- Multi-table joins
+- Filtering with WHERE
+- Aggregation with COUNT and AVG
+- Grouping with GROUP BY
+- Filtering grouped data with HAVING
+- Sorting with ORDER BY
+- Pagination with LIMIT and OFFSET
